@@ -4,7 +4,7 @@ Snippets for Sublime Text 3 by !frappant Webfactory
 
 ## Installation
 
-Please clone directly to your "Sublime Text 3/Packages" Folder located at same level as the "User" package.
+Please clone directly to your "Sublime Text 3/Packages" folder (which contains also the "User" package).
 
 ## Constribute
 
