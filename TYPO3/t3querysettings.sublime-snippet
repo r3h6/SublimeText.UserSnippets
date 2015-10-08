@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-/** @var $querySettings \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings */
-$querySettings = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
+/** @var \$querySettings \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings */
+\$querySettings = \$this->objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>t3querysettings</tabTrigger>
