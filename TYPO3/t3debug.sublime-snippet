@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[\TYPO3\CMS\Core\Utility\DebugUtility::debug(${1:\$var}, '${1:\$var}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>t3debug</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

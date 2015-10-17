@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$this->${1:subject}
+	->expects(${2:\$this->once()})
+	->method('${3:method}')
+	->with(${4:NULL})
+	->will(\$this->returnValue(${5:NULL}));
+]]></content>
+	<!-- Optional: Tab trigger to activate the snippet -->
+	<tabTrigger>testexpectsmethod</tabTrigger>
+	<!-- Optional: Scope the tab trigger will be active in -->
+	<scope>source.php</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>Test expected method call</description>
+</snippet>

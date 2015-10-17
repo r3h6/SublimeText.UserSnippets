@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * inject${1/(.*)/\u$1/}
+ *
+ * @param Tx_$2${1/(.*)/\u$1/} \$$1
+ * @return void
+ */
+public function inject${1/(.*)/\u$1/}(Tx_$2${1/(.*)/\u$1/} \$$1) {
+	\$this->$1 = \$$1;
+}
+]]></content>
+	<!-- Optional: Tab trigger to activate the snippet -->
+	<tabTrigger>inject</tabTrigger>
+	<!-- Optional: Scope the tab trigger will be active in -->
+	<scope>source.php</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>Inject a an instance.</description>
+</snippet>
