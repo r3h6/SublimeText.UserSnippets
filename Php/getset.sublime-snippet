@@ -1,22 +1,21 @@
 <snippet>
 	<content><![CDATA[
 /**
- * Returns the $1
+ * Get ${1:[Prop name ]}
  *
- * @return ${2:[type]} \$$1
+ * @return ${3:[type]} ${4:[description]}
  */
-public function get${1/(.*)/\u$1/}(){
-	return \$this->${1:$SELECTION};
+public function get${1/(.*)/\u$1/:[ Prop name ]}() {
+	return \$this->${1:[ Prop name ]};
 }
 
 /**
- * Sets the $1
+ * Set ${1:[Prop name ]}
  *
- * @param ${2:[type]} \$$1
- * @return object \$this
+ * @param ${3:[type]} \$${1:[ Prop name ]} ${4/(.*)/\u$1/:[description]}
  */
-public function set${1/(.*)/\u$1/}($3\$$1){
-	\$this->$1 = \$$1;
+public function set${1/(.*)/\u$1/:[ Prop name ]}(\$${1/(.*)/$1/:[ Prop name ]}) {
+	\$this->${1:[Prop name ]} = \$${1/(.*)/$1/:[ Prop name ]};
 	return \$this;
 }
 ]]></content>
