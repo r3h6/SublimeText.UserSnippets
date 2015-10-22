@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
-<f:translate key="${1:key}">${2:Default}</f:translate>
+	<content><![CDATA[<f:cObject typoscriptObjectPath="${1:lib.contentObject}" />
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ftrans</tabTrigger>
+	<tabTrigger>fcobj</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.html</scope> -->
+	<description>Fluid: cObject</description>
 </snippet>

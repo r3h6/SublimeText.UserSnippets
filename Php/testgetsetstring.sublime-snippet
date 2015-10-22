@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * @test
+ */
+public function get${1/(.*)/\u$1/}ReturnsInitialValueForString() {
+	\$this->assertSame('', \$this->subject->get${1/(.*)/\u$1/}());
+}
+
+/**
+ * @test
+ */
+public function set${1/(.*)/\u$1/}ForStringSets${1/(.*)/\u$1/}() {
+	\$this->subject->set${1/(.*)/\u$1/}('Conceived at T3CON10');
+	\$this->assertAttributeEquals('Conceived at T3CON10', '$1', \$this->subject);
+}
+]]></content>
+	<!-- Optional: Tab trigger to activate the snippet -->
+	<tabTrigger>testgetsetstring</tabTrigger>
+	<!-- Optional: Scope the tab trigger will be active in -->
+	<scope>source.php</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>Test string getter and setter</description>
+</snippet>
