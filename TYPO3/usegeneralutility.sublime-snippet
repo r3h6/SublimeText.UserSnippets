@@ -1,9 +1,10 @@
 <snippet>
 	<content><![CDATA[
-\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('${1:this}');
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>makeInstance</tabTrigger>
+	<tabTrigger>usegeneralutility</tabTrigger>
+	<description>use TYPO3\CMS\Core\Utility\GeneralUtility</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>

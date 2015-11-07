@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:${1:this}/Configuration/TypoScript/${2:setup}.txt">
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>includetyposcript</tabTrigger>
+	<description>Includes a TypoScript</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.txt,source.ts</scope>
+</snippet>

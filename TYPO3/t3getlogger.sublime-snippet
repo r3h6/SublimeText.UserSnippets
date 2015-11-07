@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 /**
- * Returns a logger object.
+ * Get class logger
  *
- * @return \TYPO3\CMS\Core\Log\Logger
+ * @return TYPO3\CMS\Core\Log\Logger
  */
 protected function getLogger (){
 	return \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Core\Log\LogManager')->getLogger(__CLASS__);
@@ -11,6 +11,7 @@ protected function getLogger (){
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>t3getlogger</tabTrigger>
+	<description>Getter for logger</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>
