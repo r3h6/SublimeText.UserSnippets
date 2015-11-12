@@ -6,5 +6,5 @@
 	<tabTrigger>includetyposcript</tabTrigger>
 	<description>Includes a TypoScript</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.txt,source.ts</scope>
+	<!-- <scope>source.txt,source.ts</scope> -->
 </snippet>
