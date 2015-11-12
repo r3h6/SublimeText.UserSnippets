@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * PersistenceManager
+ * @var TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager
+ * @inject
+ */
+protected \$persistenceManager = NULL;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>t3injectpersistencemanager</tabTrigger>
+	<description>Inject PersistenceManager</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
