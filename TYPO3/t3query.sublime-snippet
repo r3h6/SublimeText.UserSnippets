@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+/** @var TYPO3\CMS\Extbase\Persistence\Generic\Query \$query */
+\$query = \$this->createQuery();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>t3query</tabTrigger>
+	<description>Create query</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
