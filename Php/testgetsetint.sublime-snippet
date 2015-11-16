@@ -3,14 +3,14 @@
 /**
  * @test
  */
-public function get${1/(.*)/\u$1/}ReturnsInitialValueForString() {
+public function get${1/(.*)/\u$1/}ReturnsInitialValueForInt() {
 	\$this->assertSame(0, \$this->subject->get${1/(.*)/\u$1/}());
 }
 
 /**
  * @test
  */
-public function set${1/(.*)/\u$1/}ForStringSets${1/(.*)/\u$1/}() {
+public function set${1/(.*)/\u$1/}ForIntSets${1/(.*)/\u$1/}() {
 	\$this->subject->set${1/(.*)/\u$1/}(123);
 	\$this->assertAttributeEquals(123, '$1', \$this->subject);
 }
