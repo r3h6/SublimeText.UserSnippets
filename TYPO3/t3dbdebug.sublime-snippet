@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+\$GLOBALS['TYPO3_DB']->store_lastBuiltQuery = true;
+${1:PHP...}
+\$logger->info(\$GLOBALS['TYPO3_DB']->debug_lastBuiltQuery)
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>t3dbdebug</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>
