@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-/** @var \TYPO3\CMS\Core\Log\Logger $logger */
+/** @var \TYPO3\CMS\Core\Log\Logger \$logger */
 \$logger = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Core\Log\LogManager')->getLogger(__CLASS__);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

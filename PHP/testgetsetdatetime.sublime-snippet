@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * @test
+ */
+public function get${1/(.*)/\u$1/}ReturnsInitialValueForDateTime() {
+	\$this->assertSame(NULL, \$this->subject->get${1/(.*)/\u$1/}());
+}
+
+/**
+ * @test
+ */
+public function set${1/(.*)/\u$1/}ForDateTimeSets${1/(.*)/\u$1/}() {
+	\$dateTimeFixture = new \DateTime();
+	\$this->subject->set${1/(.*)/\u$1/}(\$dateTimeFixture);
+	\$this->assertAttributeEquals(\$dateTimeFixture, '$1', \$this->subject);
+}
+]]></content>
+	<!-- Optional: Tab trigger to activate the snippet -->
+	<tabTrigger>testgetsetdatetime</tabTrigger>
+	<!-- Optional: Scope the tab trigger will be active in -->
+	<scope>source.php</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>Test DateTime getter and setter</description>
+</snippet>
