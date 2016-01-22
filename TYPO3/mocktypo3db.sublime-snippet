@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+\$GLOBALS['TYPO3_DB'] = \$this->getMock(\TYPO3\CMS\Core\Database\DatabaseConnection::class, get_class_methods(\TYPO3\CMS\Core\Database\DatabaseConnection::class), [], '', false);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mocktypo3db</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <descritpion>Get DatabaseConnection Mock</descritpion>
+    <scope>source.php</scope>
+</snippet>
