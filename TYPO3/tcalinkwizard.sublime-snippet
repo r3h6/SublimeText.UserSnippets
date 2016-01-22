@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+'softref' => 'typolink',
+'wizards' => array(
+	'link' => array(
+		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+		'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1',
+		'module' => array(
+			'name' => 'wizard_link',
+		),
+		'params' => array(
+			'blindLinkFields' => 'class, params',
+		),
+		'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+		'type' => 'popup',
+	),
+),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tcalinkwizard</tabTrigger>
+	<description>TCA Link Wizard Config</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
