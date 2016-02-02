@@ -1,9 +1,8 @@
 <snippet>
 	<content><![CDATA[
-\$templateVariableContainer = \$this->renderingContext->getTemplateVariableContainer();
-\$templateVariableContainer->add(\$as, ${1:var});
+\$this->templateVariableContainer->add(\$as, ${1:var});
 \$output = \$this->renderChildren();
-\$templateVariableContainer->remove(\$as);
+\$this->templateVariableContainer->remove(\$as);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>t3templatevariablecontaineradd</tabTrigger>
