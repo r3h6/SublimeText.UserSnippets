@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$templateVariableContainer = \$this->renderingContext->getTemplateVariableContainer();
+\$templateVariableContainer->add(\$as, ${1:var});
+\$output = \$this->renderChildren();
+\$templateVariableContainer->remove(\$as);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>t3templatevariablecontaineradd</tabTrigger>
+	<desctiption>Add var to viewhelper.</desctiption>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
