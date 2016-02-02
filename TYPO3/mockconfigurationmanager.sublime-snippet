@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+\$configurationManager = \$this->getMock(\TYPO3\CMS\Extbase\Configuration\ConfigurationManager::class, get_class_methods(\TYPO3\CMS\Extbase\Configuration\ConfigurationManager::class), [], '', false);
+GeneralUtility::setSingletonInstance(\TYPO3\CMS\Extbase\Configuration\ConfigurationManager::class, \$configurationManager);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mockconfigurationmanager</tabTrigger>
+    <description>Get ConfigurationManager Mock</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>
