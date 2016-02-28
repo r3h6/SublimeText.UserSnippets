@@ -3,14 +3,16 @@
 /**
  * @test
  */
-public function get${1/(.*)/\u$1/}ReturnsInitialValueForDateTime() {
+public function get${1/(.*)/\u$1/}ReturnsInitialValueForDateTime()
+{
 	\$this->assertSame(NULL, \$this->subject->get${1/(.*)/\u$1/}());
 }
 
 /**
  * @test
  */
-public function set${1/(.*)/\u$1/}ForDateTimeSets${1/(.*)/\u$1/}() {
+public function set${1/(.*)/\u$1/}ForDateTimeSets${1/(.*)/\u$1/}()
+{
 	\$dateTimeFixture = new \DateTime();
 	\$this->subject->set${1/(.*)/\u$1/}(\$dateTimeFixture);
 	\$this->assertAttributeEquals(\$dateTimeFixture, '$1', \$this->subject);

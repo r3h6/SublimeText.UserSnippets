@@ -2,10 +2,11 @@
 	<content><![CDATA[
 /**
  * SignalSlotDispatcher
+ *
  * @var TYPO3\CMS\Extbase\SignalSlot\Dispatcher
  * @inject
  */
-protected \$signalSlotDispatcher = NULL;
+protected \$signalSlotDispatcher = null;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>t3injectsignalslotdispatcher</tabTrigger>

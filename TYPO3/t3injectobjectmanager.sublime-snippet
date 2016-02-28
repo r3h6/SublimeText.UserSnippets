@@ -2,10 +2,11 @@
 	<content><![CDATA[
 /**
  * ObjectManager
+ *
  * @var TYPO3\CMS\Extbase\Object\ObjectManager
  * @inject
  */
-protected \$objectManager = NULL;
+protected \$objectManager = null;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>t3injectobjectmanager</tabTrigger>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\$${1:object} = GeneralUtility::makeInstance('TYPO3\\\\CMS\\\\Extbase\\\\Object\\\\ObjectManager')->get('Frappant\\\\${2:snippet}\\\\${1/(.*)/\u$1/:Object}');
+\$${1:object} = GeneralUtility::makeInstance(ObjectManager::class)->get(${1/(.*)/\u$1/:Object}::class);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>t3objectmanagerget</tabTrigger>

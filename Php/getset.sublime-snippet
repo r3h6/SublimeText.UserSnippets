@@ -1,22 +1,23 @@
 <snippet>
 	<content><![CDATA[
 /**
- * Get ${1:[Prop name ]}
+ * Gets the ${1:[Prop name ]}
  *
  * @return ${3:[type]} ${4:[description]}
  */
-public function get${1/(.*)/\u$1/:[ Prop name ]}() {
+public function get${1/(.*)/\u$1/:[ Prop name ]}()
+{
 	return \$this->${1:[ Prop name ]};
 }
 
 /**
- * Set ${1:[Prop name ]}
+ * Sets the ${1:[Prop name ]}
  *
  * @param ${3:[type]} \$${1:[ Prop name ]} ${4/(.*)/\u$1/:[description]}
  */
-public function set${1/(.*)/\u$1/:[ Prop name ]}(\$${1/(.*)/$1/:[ Prop name ]}) {
+public function set${1/(.*)/\u$1/:[ Prop name ]}(\$${1/(.*)/$1/:[ Prop name ]})
+{
 	\$this->${1:[Prop name ]} = \$${1/(.*)/$1/:[ Prop name ]};
-	return \$this;
 }
 ]]></content>
 	<!-- Optional: Tab trigger to activate the snippet -->

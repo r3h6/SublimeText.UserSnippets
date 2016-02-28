@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
 \$this->${1:subject}
-	->expects(${2:\$this->once()})
+	->expects(\$this->${2:once()})
 	->method('${3:method}')
-	->with(${4:NULL})
-	->will(\$this->returnValue(${5:NULL}));
+	->with(${4:null})
+	->will(\$this->returnValue(${5:null}));
 ]]></content>
 	<!-- Optional: Tab trigger to activate the snippet -->
 	<tabTrigger>testexpectsmethod</tabTrigger>
