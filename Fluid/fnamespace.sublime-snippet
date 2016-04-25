@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+<html xmlns:f="http://xsd.helmut-hummel.de/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      xmlns:frp="http://typo3.org/ns/Frappant/FrpBasis/ViewHelpers"
+      xmlns:tx="http://typo3.org/ns/Frappant/FrpTemplateHpluss/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+</html>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fnamespace</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.html</scope>
+</snippet>

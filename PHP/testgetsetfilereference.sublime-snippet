@@ -1,0 +1,63 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * @test
+ */
+public function get${1/(.*)/\u$1/}sReturnsInitialValueForFileReference()
+{
+    \$newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+    \$this->assertEquals(
+        \$newObjectStorage,
+        \$this->subject->get${1/(.*)/\u$1/}s()
+    );
+}
+
+/**
+ * @test
+ */
+public function set${1/(.*)/\u$1/}sForFileReferenceSets${1/(.*)/\u$1/}s()
+{
+    \$$1 = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+    \$objectStorageHoldingExactlyOne${1/(.*)/\u$1/}s = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+    \$objectStorageHoldingExactlyOne${1/(.*)/\u$1/}s->attach(\$$1);
+    \$this->subject->set${1/(.*)/\u$1/}s(\$objectStorageHoldingExactlyOne${1/(.*)/\u$1/}s);
+
+    \$this->assertAttributeEquals(
+        \$objectStorageHoldingExactlyOne${1/(.*)/\u$1/}s,
+        '$1s',
+        \$this->subject
+    );
+}
+
+/**
+ * @test
+ */
+public function add${1/(.*)/\u$1/}ToObjectStorageHolding${1/(.*)/\u$1/}s()
+{
+    \$$1 = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+    \$$1sObjectStorageMock = \$this->getMock('TYPO3\\\\CMS\\\\Extbase\\\\Persistence\\\\ObjectStorage', array('attach'), array(), '', false);
+    \$$1sObjectStorageMock->expects(\$this->once())->method('attach')->with(\$this->equalTo(\$$1));
+    \$this->inject(\$this->subject, '$1s', \$$1sObjectStorageMock);
+
+    \$this->subject->add${1/(.*)/\u$1/}(\$$1);
+}
+
+/**
+ * @test
+ */
+public function remove${1/(.*)/\u$1/}FromObjectStorageHolding${1/(.*)/\u$1/}s()
+{
+    \$$1 = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+    \$$1sObjectStorageMock = \$this->getMock('TYPO3\\\\CMS\\\\Extbase\\\\Persistence\\\\ObjectStorage', array('detach'), array(), '', false);
+    \$$1sObjectStorageMock->expects(\$this->once())->method('detach')->with(\$this->equalTo(\$$1));
+    \$this->inject(\$this->subject, '$1s', \$$1sObjectStorageMock);
+
+    \$this->subject->remove${1/(.*)/\u$1/}(\$$1);
+
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>testgetsetfilereference</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>
