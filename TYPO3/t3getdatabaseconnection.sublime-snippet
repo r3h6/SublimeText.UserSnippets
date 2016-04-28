@@ -3,7 +3,7 @@
 /**
  * @return TYPO3\CMS\Core\Database\DatabaseConnection
  */
-protected function getDatabasConnection()
+protected function getDatabaseConnection()
 {
     return \$GLOBALS['TYPO3_DB'];
 }
